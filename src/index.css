@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* font-family: 'Rubik Gemstones', cursive;
+font-family: 'Space Grotesk', sans-serif; */
+body {
+  font-family: "Space Grotesk", sans-serif;
+}

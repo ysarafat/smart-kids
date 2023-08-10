@@ -1,7 +1,11 @@
 import './App.css';
 
 function App() {
-    return <p className="read-the-docs">Click on the Vite and React logos to learn more</p>;
+    return (
+        <div>
+            <p className="text-3xl text-center">Yeah It's Working Brother.</p>
+        </div>
+    );
 }
 
 export default App;
