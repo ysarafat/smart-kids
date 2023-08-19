@@ -10,7 +10,7 @@ function Navbar() {
 
     return (
         <nav>
-            <div className="bg-green-300/50 border-b-4 border-gray-900 backdrop-blur-sm hidden lg:block py-5">
+            <div className=" border-b-4 border-gray-900 backdrop-blur-3xl hidden lg:block py-5">
                 <div className="max-w-[1440px] mx-auto flex justify-between items-center px-5">
                     <Logo size="text-3xl" />
                     <NavLinks />
@@ -26,7 +26,7 @@ function Navbar() {
                             className="text-3xl"
                             onClick={() => setShow(!show)} // Toggle the show state
                         >
-                            {show ? <HiXMark /> : <HiBars3BottomRight />}
+                            {!show && <HiBars3BottomRight />}
                         </button>
                     </div>
                 </div>
@@ -38,9 +38,15 @@ function Navbar() {
                     animate={{ right: show ? 0 : '-100%' }}
                     exit={{ right: show ? '100%' : 0 }}
                     transition={{ duration: 0.2, ease: 'easeOut' }}
-                    className="py-5  w-1/2 fixed right-0 h-full px-5 text-center z-40 backdrop-blur-sm bg-slate-200/30"
+                    className="py-5  w-1/2 fixed right-0 top-0 h-full px-5 text-center z-40 backdrop-blur-3xl bg-slate-200/30   "
                 >
-                    <ul className="flex flex-col gap-3 text-lg">
+                    <ul className="flex flex-col gap-3 text-lg ">
+                        <button
+                            onClick={() => setShow(!show)}
+                            className="flex justify-end text-3xl text-red-500"
+                        >
+                            <HiXMark />
+                        </button>
                         <li>home</li>
                         <li>About Us</li>
                         <li>Course</li>
