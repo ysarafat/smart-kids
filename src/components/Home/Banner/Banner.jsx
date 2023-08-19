@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import bannerImag from '../../assets/images/children.jpg';
+import bannerImag from '../../../assets/images/children.jpg';
 
 function Banner() {
     return (
