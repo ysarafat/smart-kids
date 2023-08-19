@@ -12,7 +12,7 @@ function NavLinks() {
                     <Link to="/about-us"> About Us</Link>
                 </li>
                 <li>
-                    <Link to="/course">Course</Link>
+                    <Link to="/courses">Course</Link>
                 </li>
                 <li>
                     <Link to="/login">Login</Link>
