@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Home/Navbar/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 
 function ErrorPage() {
     return (

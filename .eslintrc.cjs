@@ -39,6 +39,9 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 0,
         'consistent-return': 0,
         'react/no-unescaped-entities': 0,
+        'import/prefer-default-export': 0,
+        'no-unused-expressions': 0,
+        'no-param-reassign': 0,
         'react/jsx-filename-extension': [
             1,
             {

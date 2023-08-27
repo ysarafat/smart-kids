@@ -38,22 +38,23 @@ function Navbar() {
                     animate={{ right: show ? 0 : '-100%' }}
                     exit={{ right: show ? '100%' : 0 }}
                     transition={{ duration: 0.2, ease: 'easeOut' }}
-                    className="py-5  w-1/2 fixed right-0 top-0 h-full px-5 text-center z-40 backdrop-blur-3xl bg-slate-200/30   "
+                    className={`py-5 w-1/2 fixed ${
+                        show ? 'right-0' : 'right-full'
+                    } top-0 h-full px-5 text-center z-40 backdrop-blur-3xl bg-slate-200/30`}
                 >
-                    <ul className="flex flex-col gap-3 text-lg ">
+                    {' '}
+                    <ul className="flex flex-col gap-3 text-lg">
+                        {' '}
                         <button
                             onClick={() => setShow(!show)}
                             className="flex justify-end text-3xl text-red-500"
                         >
-                            <HiXMark />
-                        </button>
-                        <li>home</li>
-                        <li>About Us</li>
-                        <li>Course</li>
-                        <li>Login</li>
-                        <li>Register</li>
-                        <li>Newsletter</li>
-                    </ul>
+                            {' '}
+                            <HiXMark />{' '}
+                        </button>{' '}
+                        <li>home</li> <li>About Us</li> <li>Course</li> <li>Login</li>{' '}
+                        <li>Register</li> <li>Newsletter</li>{' '}
+                    </ul>{' '}
                 </motion.div>
             )}
 
