@@ -5,8 +5,8 @@ import ErrorPage from '../pages/Error/ErrorPage';
 import Home from '../pages/Home/Home';
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
-import PublicRoute from './PublicRoute';
-import PrivateRoute from './privateRoute';
+import PublicRoute from './PublicRoute.js';
+import PrivateRoute from './privateRoute.js';
 
 const routers = new createBrowserRouter([
     {
