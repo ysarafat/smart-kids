@@ -5,6 +5,8 @@ import ErrorPage from '../pages/Error/ErrorPage';
 import Home from '../pages/Home/Home';
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
+import PrivateRoute from './PrivateRoute';
+import PublicRoute from './PublicRoute';
 
 const routers = new createBrowserRouter([
     {
@@ -18,15 +20,27 @@ const routers = new createBrowserRouter([
             },
             {
                 path: '/signin',
-                element: <Login />,
+                element: (
+                    <PublicRoute>
+                        <Login />
+                    </PublicRoute>
+                ),
             },
             {
                 path: '/signup',
-                element: <Register />,
+                element: (
+                    <PublicRoute>
+                        <Register />
+                    </PublicRoute>
+                ),
             },
             {
                 path: '/courses',
-                element: <Course />,
+                element: (
+                    <PrivateRoute>
+                        <Course />
+                    </PrivateRoute>
+                ),
             },
         ],
     },
