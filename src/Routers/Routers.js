@@ -20,11 +20,7 @@ const routers = new createBrowserRouter([
             },
             {
                 path: '/signin',
-                element: (
-                    <PublicRoute>
-                        <Login />
-                    </PublicRoute>
-                ),
+                element: <Login />,
             },
             {
                 path: '/signup',
