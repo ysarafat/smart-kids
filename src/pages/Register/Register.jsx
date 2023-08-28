@@ -19,7 +19,7 @@ function Register() {
             setError(signupError?.data.error);
         }
         if (!isError && data?.success) {
-            navigate('/login', { replace: true });
+            navigate('/signin', { replace: true });
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',

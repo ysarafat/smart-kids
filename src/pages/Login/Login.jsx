@@ -9,6 +9,7 @@ function Login() {
     const [error, setError] = useState('');
     const [signin, { data, isLoading, isError, error: signinError }] = useSigninMutation();
     const navigate = useNavigate();
+
     const {
         register,
         handleSubmit,
@@ -22,7 +23,8 @@ function Login() {
     };
     useEffect(() => {
         if (!isError && data?.access_token) {
-            navigate('/', { replace: true });
+            console.log(!isError && data?.access_token);
+
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',

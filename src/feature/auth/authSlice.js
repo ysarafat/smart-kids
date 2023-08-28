@@ -6,6 +6,7 @@ const initialState = {
     access_token: undefined,
     data: undefined,
 };
+
 const authSlice = createSlice({
     name: 'auth',
     initialState,
@@ -19,6 +20,7 @@ const authSlice = createSlice({
         userSignOut: (state) => {
             state.success = undefined;
             state.message = undefined;
+            state.access_token = undefined;
             state.data = undefined;
         },
     },
