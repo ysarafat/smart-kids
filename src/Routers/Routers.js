@@ -5,7 +5,6 @@ import ErrorPage from '../pages/Error/ErrorPage';
 import Home from '../pages/Home/Home';
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
-import PrivateRoute from './privateRoute';
 
 const routers = new createBrowserRouter([
     {
@@ -27,11 +26,7 @@ const routers = new createBrowserRouter([
             },
             {
                 path: '/courses',
-                element: (
-                    <PrivateRoute>
-                        <Course />
-                    </PrivateRoute>
-                ),
+                element: <Course />,
             },
         ],
     },
