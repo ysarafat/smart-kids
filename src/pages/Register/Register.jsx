@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Error from '../../components/ui/Error';
 import { useSignupMutation } from '../../feature/auth/authApi';
@@ -114,6 +114,12 @@ function Register() {
                         disabled={isLoading}
                         className="w-full px-3 py-2  !mt-5 rounded-sm cursor-pointer  bg-green-300 duration-300"
                     />
+                    <p className="mt-4">
+                        Already have an account?{' '}
+                        <Link to="/signin" className="text-green-300 hover:underline">
+                            Signin Now
+                        </Link>
+                    </p>
                 </form>
             </div>
         </div>

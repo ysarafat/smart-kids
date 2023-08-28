@@ -15,7 +15,7 @@ function NavLinks() {
                     <Link to="/courses">Course</Link>
                 </li>
                 <li>
-                    <Link to="/login">Login</Link>
+                    <Link to="/signin">Login</Link>
                 </li>
             </ul>
         </div>

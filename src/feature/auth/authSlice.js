@@ -14,6 +14,7 @@ const authSlice = createSlice({
             state.success = action.payload.success;
             state.message = action.payload.message;
             state.data = action.payload.data;
+            state.access_token = action.payload.access_token;
         },
         userSignOut: (state) => {
             state.success = undefined;
