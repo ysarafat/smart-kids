@@ -23,8 +23,6 @@ function Login() {
     };
     useEffect(() => {
         if (!isError && data?.access_token) {
-            console.log(!isError && data?.access_token);
-
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
@@ -38,12 +36,12 @@ function Login() {
         }
     }, [data, isError, navigate, signinError]);
     return (
-        <div className="min-h-[calc(100vh-124px)] flex  items-center ">
+        <div className="min-h-[calc(100vh-124px)] flex  items-center px-4 ">
             <div className="w-full">
                 <h1 className="text-3xl text-center font-bold">Sign In</h1>
                 <form
                     onSubmit={handleSubmit(onSubmit)}
-                    className="border border-slate-200 w-1/3 mx-auto p-5  rounded-md mt-8"
+                    className="border border-slate-200 w-full lg:w-1/3 mx-auto p-5  rounded-md mt-8"
                 >
                     {error && <Error message={error} />}
                     <label className="" htmlFor="">

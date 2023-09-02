@@ -47,13 +47,13 @@ function Register() {
     };
 
     return (
-        <div className=" min-h-[calc(100vh-124px)] flex  items-center ">
+        <div className=" min-h-[calc(100vh-124px)] flex px-4  items-center ">
             <div className="w-full">
                 <h1 className="text-3xl text-center font-bold">Sign Up</h1>
 
                 <form
                     onSubmit={handleSubmit}
-                    className="border border-slate-200 w-1/3 mx-auto p-5  rounded-md mt-8"
+                    className="border border-slate-200 lg:w-1/3 mx-auto p-5  rounded-md mt-8"
                 >
                     {error && <Error message={error} />}
 
